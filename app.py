@@ -47,7 +47,7 @@ if st.button("Humanize Text 🚀", type="primary", use_container_width=True):
             genai.configure(api_key=api_key_input)
             
             # Using stable flash model for fast execution
-            model = genai.GenerativeModel('gemini-1.5-pro')
+            model = genai.GenerativeModel('gemini-pro')
             
             # Anti-AI Detection System Prompt
             system_prompt = """You are an expert human content writer and anti-AI detection specialist. Your task is to rewrite the provided text so that it completely bypasses all AI detectors (like GPTZero, Turnitin, Copyleaks) while keeping the original meaning intact. 
